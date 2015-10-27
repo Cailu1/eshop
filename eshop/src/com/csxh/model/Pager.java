@@ -54,14 +54,16 @@ public class Pager {
 	}
 
 	public int getPageCount() {
-		return pageCount;
+	
+		this.currentPage=(int)Math.ceil(this.totalRows/this.pageRows);
+		return this.currentPage;
 	}
 	
-	public boolean hasPrev(){
+	public boolean getHasPrev(){
 		return this.currentPage-1>0;
 	}
 	
-	public boolean hasNext(){
+	public boolean getHasNext(){
 		return this.currentPage+1<=this.pageCount;
 	}
 	

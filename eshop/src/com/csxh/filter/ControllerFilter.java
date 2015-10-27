@@ -62,7 +62,7 @@ public class ControllerFilter implements Filter {
 			IndexAction action = new IndexAction();
 			Log4jUtil.info("转入JSP页中使用的内置对象");
 			action.setRequest(req);
-			action.setSession(req.getSession());
+
 			// action.setApplication(this.getServletContext());
 			action.setParams(req.getParameterMap());
 			Log4jUtil.info("处理业务数据及逻辑操作");

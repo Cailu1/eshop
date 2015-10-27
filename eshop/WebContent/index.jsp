@@ -115,7 +115,7 @@
 	                  <table width="100%" border="0" cellspacing="0" cellpadding="2">
 	                  
                       <!-- 商品子类开始 -->
-	                  <c:forEach items="${category.children }" var="subcategory">
+	                  <c:forEach items="${category.children}" var="subcategory">
 	                  
 	                    <tr> 
 	                      <td valign="middle" align="center" width="25%">
